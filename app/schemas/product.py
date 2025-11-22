@@ -15,7 +15,7 @@ class ProductBase(BaseModel):
     category_id: int = Field(..., description="Category ID")
     image_url: Optional[str] = Field(None, description="Product Image URL")
 
-class ProductCreate(BaseModel):
+class ProductCreate(ProductBase):
     pass
 
 class ProductResponse(BaseModel):
